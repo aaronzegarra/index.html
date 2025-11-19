@@ -1,0 +1,106 @@
+/* ...existing code... */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root{
+    --kod-blue: #5988FF;
+    --kod-pink: #FD98FB;
+    --kod-green: #D6FF6B;
+    --kod-white: #FFFFFF;
+    --text: #222;
+}
+
+*{box-sizing:border-box;}
+
+body{
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text);
+    margin: 0;
+    padding: 32px;
+    background: linear-gradient(180deg, rgba(89,136,255,0.06) 0%, rgba(253,152,251,0.03) 50%, rgba(214,255,107,0.02) 100%);
+}
+
+/* Contenedor central */
+.container{
+    max-width: 900px;
+    margin: 28px auto;
+    background: var(--kod-white);
+    border: 1px solid rgba(89,136,255,0.18);
+    border-left: 6px solid var(--kod-blue);
+    border-radius: 12px;
+    padding: 26px;
+    box-shadow: 0 8px 24px rgba(25, 45, 100, 0.06);
+}
+
+/* Tipografías y encabezados */
+h1{
+    color: var(--kod-blue);
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+h2{
+    color: var(--kod-pink);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 18px 0 8px 0;
+}
+
+/* Texto y lista */
+p{
+    margin: 8px 0 12px 0;
+    color: var(--text);
+}
+
+ul{
+    margin-left: 20px;
+    padding-left: 0;
+    list-style-type: square;
+}
+
+li{
+    color: #444;
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+/* Enlaces: color + decoración coloreada */
+a{
+    color: var(--kod-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--kod-pink);
+    text-decoration-thickness: 2px;
+}
+
+/* Imagen: responsiva y con borde Kodland */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 14px 0;
+    border-radius: 10px;
+    border: 3px solid rgba(214,255,107,0.9);
+}
+
+/* Pequeños resaltados */
+.badge{
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--kod-blue), var(--kod-pink));
+    color: var(--kod-white);
+    font-weight: 600;
+    font-size: 13px;
+    border: 1px solid rgba(89,136,255,0.12);
+}
+
+/* Adaptaciones móviles */
+@media (max-width:600px){
+    body{padding:16px;}
+    .container{padding:16px;}
+    h1{font-size:22px;}
+    h2{font-size:18px;}
+}
+/* ...existing code... */
